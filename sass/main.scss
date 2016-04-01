@@ -1,0 +1,52 @@
+@import "compass/reset";
+@import "variables";
+
+html, body {
+  margin:0;
+  padding:0;
+  color:$gray;
+  font:normal normal 0/0 Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, b, strong, em, i {
+  line-height: 160%;
+}
+h1, h2, h3, h4, h5, h6 {
+  color:$darkgray;
+}
+h1 {
+  font-size:42px;
+}
+h2 {
+  font-size:36px;
+}
+h3 {
+  font-size:32px;
+}
+h4 {
+  font-size:28px;
+}
+h5 {
+  font-size:24px;
+}
+h6 {
+  font-size:20px;
+}
+p, a, b, strong, em, i {
+  font-size:16px;
+}
+b, strong {
+  font-weight:bold;
+  color:$darkgray;
+}
+i, em {
+  font-style:italic;
+}
+
+.wrapper {
+  width:100%;
+  max-width:860px;
+  margin:0 auto;
+  padding:0 20px;
+  box-sizing: border-box;
+}
