@@ -77,11 +77,13 @@ h1, h2, h3, h4, h5, h6, p, a, b, strong, em, i {
 
 h1, h3, h5 {
   color: #363636;
+  margin-bottom: 24px;
 }
 
 h2, h4, h6 {
   color: #FFFFFF;
   font-weight: bold;
+  margin-bottom: 24px;
 }
 
 h1 {
@@ -110,6 +112,10 @@ h6 {
 
 p {
   margin-bottom: 24px;
+}
+
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, p:last-child {
+  margin-bottom: 0;
 }
 
 p, a, b, strong, em, i {
@@ -158,12 +164,9 @@ nav {
   background-color: #89C4F4;
   position: absolute;
 }
-nav h6 {
-  margin-bottom: 42px;
-}
 nav a {
   color: #363636;
-  padding: 16px 24px;
+  padding: 12px 24px;
   font-size: 24px;
   text-decoration: none;
   margin-bottom: 24px;
@@ -175,7 +178,7 @@ nav a {
   border-radius: 4px;
 }
 nav a:hover {
-  background-color: rgba(44, 62, 80, 0.5);
+  background-color: rgba(44, 62, 80, 0.6);
   text-decoration: none;
 }
 nav a:active, nav a.active {
@@ -213,14 +216,36 @@ main {
   border-radius: 4px;
 }
 :root form paper-button:hover {
-  background-color: rgba(44, 62, 80, 0.5);
+  background-color: rgba(44, 62, 80, 0.6);
 }
 :root form paper-button:before, :root form paper-button:after {
-  display: b;
+  display: none;
 }
 :root paper-menu {
   background: #89C4F4;
 }
 :root iron-pages {
   margin-left: 406px;
+}
+:root paper-toast {
+  background: rgba(44, 62, 80, 0.6);
+  color: #FFFFFF;
+}
+:root paper-toast > span {
+  display: block;
+  font-size: 24px;
+}
+:root paper-toast p {
+  text-align: center;
+}
+:root paper-toast p span {
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  padding: 4px 16px;
+  margin-top: 24px;
+  cursor: pointer;
+  display: inline-block;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
 }

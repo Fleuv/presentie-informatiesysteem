@@ -1,40 +1,53 @@
-(function(document) {
+(function(win, doc) {
     'use strict';
 
-    // Grab a reference to our auto-binding template
-    // and give it some initial binding values
-    var app = document.querySelector('#app');
+    // Commonly used variables
+    var $user = Cookies.getJSON('user');
+    var app = doc.getElementById('app');
+
+    if (typeof $user !== 'undefined') {
+        app.firstname = $user.first;
+        app.isGuest = $user.role === 0;
+        app.isStudent = $user.role === 1;
+        app.isTeacher = $user.role === 2;
+        app.isAdvisor = $user.role === 3;
+        app.isDean = $user.role === 4;
+    } else {
+        app.firstname = 'bezoeker';
+        app.isGuest = true;
+        app.isStudent = app.isTeacher = app.isAdvisor = app.isDean = false;
+    }
 
     // Sets app default base URL
     app.baseUrl = '/';
-    if (window.location.port === '') {  // if production
-        // Uncomment app.baseURL below and
-        // set app.baseURL to '/your-pathname/' if running from folder in production
+    if (win.location.port === '') {
         app.baseUrl = '/education/presentie-informatiesysteem/';
     }
 
-    // Listen for template bound event to know when bindings
-    // have resolved and content has been stamped to the page
     app.addEventListener('dom-change', function() {
-        // Our app is ready to rock!
+        //console.log('dom-change');
     });
 
-    // See https://github.com/Polymer/polymer/issues/1381
-    window.addEventListener('WebComponentsReady', function() {
-        // imports are loaded and elements have been registered
-    });
+    win.addEventListener('WebComponentsReady', function() {
+        var login = doc.getElementById('login');
 
-    var pages = document.querySelector('iron-pages');
-    var nav = document.querySelector('paper-menu');
-    var navItems = document.querySelectorAll('paper-item');
+        login.addEventListener('click', function() {
+            /**
+             * @todo get and use relevant information
+             */
+            var tmpUserInfo = {
+                first: 'Student',
+                last: 'Example',
+                email: 'student.example@student.hu.nl',
+                role: 1
+            };
 
-    for (var i = 0; i < navItems.length; ++i) {
-        var navItem = navItems[i];
-        navItem.addEventListener('click', function(e) {
-            pages.select('agenda');
+            // Create a cookie with the user information
+            Cookies.set('user', tmpUserInfo, {expires: 7, path: ''});
+
+            // Reload the page so we will see the right elements
+            location.reload();
         });
-    }
+    });
 
-    app.firstname='gast';
-
-})(document);
+})(window, document);

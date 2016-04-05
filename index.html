@@ -17,42 +17,44 @@
 
 	<template is="dom-bind" id="app">
 
-		<iron-location path="{{path}}" hash="{{hash}}" query="{{query}}"></iron-location>
 		<nav class="wrapper primary">
 			<h6>Hey, {{firstname}}!</h6>
 			<paper-menu attr-for-selected="data-route" selected="[[route]]" selected-class="active">
-				<a data-route="agenda" href="{{baseUrl}}agenda">Agenda</a>
-				<a data-route="report" href="{{baseUrl}}report">Rapportage</a>
-				<a data-route="logout" href="{{baseUrl}}">Uitloggen</a>
+				<a data-route="agenda" href="{{baseUrl}}" hidden="{{isGuest}}">Agenda</a>
+				<a data-route="report" href="{{baseUrl}}report" hidden="{{isGuest}}">Rapportage</a>
+				<a data-route="logout" href="{{baseUrl}}logout" hidden="{{isGuest}}">Uitloggen</a>
+				<p hidden="{{isStudent}}">Graag eerst even inloggen</p>
 			</paper-menu>
 		</nav>
 		<main class="wrapper secondary">
 			<iron-pages attr-for-selected="data-route" selected="{{route}}">
 				<section data-route="home">
-					<h3>Inloggen</h3>
-					<form>
-						<paper-input type="email" error-message="Voer een correct e-mailadres in." label="E-mail" auto-validate required></paper-input>
-						<paper-input type="password" error-message="Het wachtwoord is incorrect." label="Password" auto-validate required></paper-input>
-						<paper-button>Inloggen</paper-button>
-					</form>
-				</section>
-
-				<section data-route="agenda">
 					<h3>Agenda</h3>
+					<paper-listbox>
+						{{items}}
+					</paper-listbox>
 				</section>
-
 				<section data-route="report">
 					<h3>Rapportage</h3>
+				</section>
+				<section data-route="login">
+					<h3>Inloggen</h3>
+					<form>
+						<paper-input id="email" type="email" error-message="Voer een correct e-mailadres in." label="E-mail" auto-validate required></paper-input>
+						<paper-input id="password" type="password" error-message="Het wachtwoord is incorrect." label="Password" auto-validate required></paper-input>
+						<paper-button id="login">Inloggen</paper-button>
+					</form>
 				</section>
 			</iron-pages>
 		</main>
 
-		<paper-toast id="toast">
-			<span class="toast-hide-button" role="button" tabindex="0" onclick="app.$.toast.hide()">Ok</span>
+		<paper-toast id="toast" duration="5000">
+			<p><span onclick="app.$.toast.hide()">Sluiten</span></p>
 		</paper-toast>
 
 	</template>
 
+	<script type="text/javascript" src="bower_components/js-cookie/src/js.cookie.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 
 </body>

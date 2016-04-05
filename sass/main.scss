@@ -23,10 +23,12 @@ h1, h2, h3, h4, h5, h6, p, a, b, strong, em, i {
 }
 h1, h3, h5 {
   color: $text;
+  margin-bottom: $small;
 }
 h2, h4, h6 {
   color: $secondary;
   font-weight: bold;
+  margin-bottom: $small;
 }
 h1 {
   font-size: $big;
@@ -49,6 +51,13 @@ h6 {
 p {
   margin-bottom: $small;
 }
+
+h1, h2, h3, h4, h5, h6, p {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 p, a, b, strong, em, i {
   font-size: $smallest;
   color: $text;
@@ -86,13 +95,9 @@ nav {
   background-color: $primary-fill;
   position: absolute;
 
-  h6 {
-    margin-bottom: $big;
-  }
-
   a {
     color: $text;
-    padding: ($normal/2) $small;
+    padding: ($small/2) $small;
     font-size: $small;
     text-decoration: none;
     margin-bottom: $small;
@@ -147,5 +152,25 @@ main {
   }
   iron-pages {
     margin-left: $biggest*7;
+  }
+  paper-toast {
+    background: $primary-tint;
+    color: $secondary;
+    > span {
+      display: block;
+      font-size: $small;
+    }
+    p {
+      text-align: center;
+      span {
+        color: $secondary;
+        border: 2px solid $secondary;
+        padding: ($smallest/4) $smallest;
+        margin-top: $small;
+        cursor: pointer;
+        display: inline-block;
+        @include border-radius($normal-radius);
+      }
+    }
   }
 }
