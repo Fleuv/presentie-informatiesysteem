@@ -1,8 +1,29 @@
-// Colors
-$darkgray: #171717;
-$gray: #272727;
-$lightgray: #373737;
+// Primary Colors
+$primary: #3A539B;
+$primary-fill: #89C4F4;
+$primary-deco: #2C3E50;
+$primary-tint: rgba(44, 62, 80, 0.5);
 
-$darkgrey: #878787;
-$grey: #a7a7a7;
-$lightgrey: #d7d7d7;
+// Secondary Colors
+$secondary: #FFFFFF;
+$secondary-fill: #CCCCCC;
+$secondary-deco: #AAAAAA;
+
+// Other
+$text: #363636;
+
+// Font's
+$line-height: 160%;
+$arial: normal normal 16px/$line-height Arial, Helvetica, sans-serif;
+
+// Sizes
+$smallest: 16px;
+$small: 24px;
+$normal: 32px;
+$big: 42px;
+$biggest: 58px;
+
+// Radius
+$small-radius: 4px;
+$normal-radius: 6px;
+$big-radius: 8px;

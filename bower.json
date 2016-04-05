@@ -4,9 +4,9 @@
     "Luuk van Houdt",
     "Pim Bloot",
     "Burak Inan",
-    "Wiandi Vreeswijk",
+    "Wiandi Vreeswijk"
   ],
-  "description": "Presentie Systeem",
+  "description": "Presentie Informatie Systeem",
   "main": "index.html",
   "moduleType": [],
   "license": "MIT",
@@ -20,6 +20,7 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.3.1"
+    "polymer": "Polymer/polymer#^1.4.0",
+    "page": "page.js#^1.7.1"
   }
 }

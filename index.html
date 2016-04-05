@@ -1,25 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>AUI - casus</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="Attendance System">
+	<title>Presentie Informatie Systeem</title>
 
-	<!-- [@] Bower Components -->
+	<link rel="stylesheet" href="css/main.css">
+
 	<script type="text/javascript" src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
 
-	<!-- [@] Third Party Polymer Elements -->
-	<link rel="import" href="bower_components/google-map/google-map.html">
-	<link rel="import" href="bower_components/google-map/google-map-directions.html">
-
-	<!-- [@] Custom Polymer Elements -->
-	<link rel="import" href="elements/hello-polymer.html">
-
-	<!-- [@] Main styling and JavaScript -->
-	<link rel="stylesheet" href="css/main.css">
-	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="import" href="elements/elements.html">
 </head>
 <body unresolved>
-	<div class="wrapper">
-		<hello-polymer></hello-polymer>
-	</div>
+
+	<template is="dom-bind" id="app">
+
+		<iron-location path="{{path}}" hash="{{hash}}" query="{{query}}"></iron-location>
+		<nav class="wrapper primary">
+			<h6>Hey, {{firstname}}!</h6>
+			<paper-menu attr-for-selected="data-route" selected="[[route]]" selected-class="active">
+				<a data-route="agenda" href="{{baseUrl}}agenda">Agenda</a>
+				<a data-route="report" href="{{baseUrl}}report">Rapportage</a>
+				<a data-route="logout" href="{{baseUrl}}">Uitloggen</a>
+			</paper-menu>
+		</nav>
+		<main class="wrapper secondary">
+			<iron-pages attr-for-selected="data-route" selected="{{route}}">
+				<section data-route="home">
+					<h3>Inloggen</h3>
+					<form>
+						<paper-input type="email" error-message="Voer een correct e-mailadres in." label="E-mail" auto-validate required></paper-input>
+						<paper-input type="password" error-message="Het wachtwoord is incorrect." label="Password" auto-validate required></paper-input>
+						<paper-button>Inloggen</paper-button>
+					</form>
+				</section>
+
+				<section data-route="agenda">
+					<h3>Agenda</h3>
+				</section>
+
+				<section data-route="report">
+					<h3>Rapportage</h3>
+				</section>
+			</iron-pages>
+		</main>
+
+		<paper-toast id="toast">
+			<span class="toast-hide-button" role="button" tabindex="0" onclick="app.$.toast.hide()">Ok</span>
+		</paper-toast>
+
+	</template>
+
+	<script type="text/javascript" src="js/app.js"></script>
+
 </body>
 </html>

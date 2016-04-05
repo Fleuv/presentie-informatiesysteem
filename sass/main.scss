@@ -1,52 +1,151 @@
 @import "compass/reset";
+@import "compass";
 @import "variables";
 
+// Generic element styling
+* {
+  @include box-sizing(border-box);
+}
+
 html, body {
-  margin:0;
-  padding:0;
-  color:$gray;
-  font:normal normal 0/0 Arial, Helvetica, sans-serif;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: $text;
+  position: relative;
+  font: normal normal 0/0 Arial, Helvetica, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, b, strong, em, i {
-  line-height: 160%;
+  line-height: $line-height;
 }
-h1, h2, h3, h4, h5, h6 {
-  color:$darkgray;
+h1, h3, h5 {
+  color: $text;
+}
+h2, h4, h6 {
+  color: $secondary;
+  font-weight: bold;
 }
 h1 {
-  font-size:42px;
+  font-size: $big;
 }
 h2 {
-  font-size:36px;
+  font-size: $big;
 }
 h3 {
-  font-size:32px;
+  font-size: $normal;
 }
 h4 {
-  font-size:28px;
+  font-size: $normal;
 }
 h5 {
-  font-size:24px;
+  font-size: $small;
 }
 h6 {
-  font-size:20px;
+  font-size: $small;
+}
+p {
+  margin-bottom: $small;
 }
 p, a, b, strong, em, i {
-  font-size:16px;
+  font-size: $smallest;
+  color: $text;
 }
 b, strong {
-  font-weight:bold;
-  color:$darkgray;
+  font-weight: bold;
 }
 i, em {
-  font-style:italic;
+  font-style: italic;
+}
+a {
+  color: $primary;
+  @include user-select(none);
+  &:hover {
+    text-decoration: underline;
+    color: $text;
+  }
+}
+a, button {
+  cursor: pointer;
+  word-wrap: break-word;
+  outline: none;
+  @include user-select(none);
 }
 
-.wrapper {
-  width:100%;
-  max-width:860px;
-  margin:0 auto;
-  padding:0 20px;
-  box-sizing: border-box;
+// Specified element styling
+nav {
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: $biggest;
+  height: 100%;
+  padding: $normal $biggest $biggest;
+  max-width: $biggest*6;
+  background-color: $primary-fill;
+  position: absolute;
+
+  h6 {
+    margin-bottom: $big;
+  }
+
+  a {
+    color: $text;
+    padding: ($normal/2) $small;
+    font-size: $small;
+    text-decoration: none;
+    margin-bottom: $small;
+    max-width: 100%;
+    border: 2px solid $primary-deco;
+    display: block;
+    @include border-radius($small-radius);
+    &:hover {
+      background-color: $primary-tint;
+      text-decoration: none;
+    }
+    &:active, &.active {
+      color: $primary;
+      border-color: $primary;
+    }
+    &:last-of-type {
+      margin-bottom:0;
+    }
+  }
+}
+main {
+  z-index: 0;
+  top: 50%;
+  right: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  padding: $biggest;
+  background-color: $secondary-fill;
+  @include translateY(-50%);
+}
+
+// Predefined element styling
+:root {
+  form paper-button {
+    color: $primary;
+    padding: $smallest;
+    margin-top: $normal;
+    border: 2px solid $primary;
+    font-size: $smallest;
+    background-color: transparent;
+    @include border-radius($small-radius);
+    &:hover {
+      background-color: $primary-tint;
+    }
+    &:before, &:after {
+      display: none;
+    }
+  }
+  paper-menu {
+    background: $primary-fill;
+  }
+  iron-pages {
+    margin-left: $biggest*7;
+  }
 }
