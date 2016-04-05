@@ -32,5 +32,15 @@ public class Teacher extends User {
 			myCourses.add(course);
 		}
 	}
+	
+	public void removeCourse(Course course){
+		if (this.myCourses.contains(course)){
+			myCourses.remove(course);
+		}
+	}
+	
+	public void contactSLBer(SLBer slb, Student student, String problem){
+		String email = slb.getEmail();
+	}
 
 }

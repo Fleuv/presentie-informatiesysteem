@@ -1,10 +1,9 @@
 package presentie_informatiesysteem;
 
-public abstract class User {
+public class User {
 	private String email;
 	private String firstname;
 	private String lastname;
-	@SuppressWarnings("unused")
 	private String password;
 	private String userID;
 
