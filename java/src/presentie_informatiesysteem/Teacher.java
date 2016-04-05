@@ -39,8 +39,8 @@ public class Teacher extends User {
 		}
 	}
 	
-	public void contactSLBer(SLBer slb, Student student, String problem){
-		String email = slb.getEmail();
-	}
+//	public void contactSLBer(SLBer slb, Student student, String problem){
+//		String email = slb.getEmail();
+//	}
 
 }
