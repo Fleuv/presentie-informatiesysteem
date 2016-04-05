@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fae5c55e-9b4a-4e01-b7a9-b4410c649711" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/189b9f306113c6d88460a5e4a9c0964a988f6fb0/_utilities.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/1d32b7cff488bbb6038b096e9a8ed2b7fdccc537/_grid-background.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/469c760f7d5c0ed075b60193903e7026a19b13d2/_hover-link.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/469c760f7d5c0ed075b60193903e7026a19b13d2/_link-colors.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/469c760f7d5c0ed075b60193903e7026a19b13d2/_unstyled-link.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/647b0e80f47217b1b8ae8f6d2a05f48fff884fff/_variables.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/647b0e80f47217b1b8ae8f6d2a05f48fff884fff/hello-polymer.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/647b0e80f47217b1b8ae8f6d2a05f48fff884fff/main.sassc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/647b0e80f47217b1b8ae8f6d2a05f48fff884fff/main.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/78554d02a6c2d299abe26e715499ae872cef435a/_links.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/78554d02a6c2d299abe26e715499ae872cef435a/_lists.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/78554d02a6c2d299abe26e715499ae872cef435a/_text.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/78554d02a6c2d299abe26e715499ae872cef435a/_units.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/78554d02a6c2d299abe26e715499ae872cef435a/_vertical_rhythm.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/870d6bc188e9af01f1751aabd1880292171a2933/_ellipsis.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/870d6bc188e9af01f1751aabd1880292171a2933/_force-wrap.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/870d6bc188e9af01f1751aabd1880292171a2933/_nowrap.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/870d6bc188e9af01f1751aabd1880292171a2933/_replacement.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/8fc10cd74f9c030bd385321027d80d149c74a0b2/_bullets.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/8fc10cd74f9c030bd385321027d80d149c74a0b2/_horizontal-list.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/8fc10cd74f9c030bd385321027d80d149c74a0b2/_inline-block-list.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/8fc10cd74f9c030bd385321027d80d149c74a0b2/_inline-list.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_animation.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_appearance.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_background-clip.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_background-origin.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_background-size.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_border-radius.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_box-shadow.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_box-sizing.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_columns.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_deprecated-support.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_filter.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_flexbox.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_font-face.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_hyphenation.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_images.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_inline-block.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_opacity.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_regions.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_text-shadow.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_transform.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_transition.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a1eb9fcdf69a5ebbbbf28892ad7e055419266f30/_user-interface.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a5c303767308a603b0effc4ba8a9c3f1be1af80b/_color.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a5c303767308a603b0effc4ba8a9c3f1be1af80b/_general.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a5c303767308a603b0effc4ba8a9c3f1be1af80b/_sprites.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/a5c303767308a603b0effc4ba8a9c3f1be1af80b/_tables.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/bdab7ae8017f1c4185a71d074abb92d723834c28/_css3.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/bdab7ae8017f1c4185a71d074abb92d723834c28/_reset.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/bdab7ae8017f1c4185a71d074abb92d723834c28/_support.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/bdab7ae8017f1c4185a71d074abb92d723834c28/_typography.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/bdab7ae8017f1c4185a71d074abb92d723834c28/_utilities.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/c7898b6539bf23c81d6fbecc8807ed2c2400d1ea/_alternating-rows-and-columns.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/c7898b6539bf23c81d6fbecc8807ed2c2400d1ea/_borders.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/c7898b6539bf23c81d6fbecc8807ed2c2400d1ea/_scaffolding.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/c9ffcfeee3bee6db95218bb659a79e86852d7e40/_compass.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/ee313cbec439e784b7ba76062eea946a437c76d0/_brightness.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/ee313cbec439e784b7ba76062eea946a437c76d0/_contrast.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/f85899fe49e1d095431d57544e34d15126e324bf/_clearfix.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/f85899fe49e1d095431d57544e34d15126e324bf/_float.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/f85899fe49e1d095431d57544e34d15126e324bf/_hacks.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/f85899fe49e1d095431d57544e34d15126e324bf/_min.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/f85899fe49e1d095431d57544e34d15126e324bf/_reset.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/f85899fe49e1d095431d57544e34d15126e324bf/_tag-cloud.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/fee463c460fb03734c519db441f99858641895b7/_base.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.sass-cache/fee463c460fb03734c519db441f99858641895b7/_sprite-img.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../bower_components/iron-jsonp-library/hero.svg" afterPath="$PROJECT_DIR$/../bower_components/iron-jsonp-library/hero.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../bower_components/iron-selector/index.html" afterPath="$PROJECT_DIR$/../bower_components/iron-selector/index.html" />
+    </list>
+    <ignored path="presentieinformatie-systeem-java.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="presentieinformatie-systeem-java" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="59" />
+    <option name="y" value="24" />
+    <option name="width" value="1307" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="presentieinformatie-systeem-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="presentieinformatie-systeem-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="presentieinformatie-systeem-java" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fae5c55e-9b4a-4e01-b7a9-b4410c649711" name="Default" comment="" />
+      <created>1459539141465</created>
+      <option name="number" value="Default" />
+      <updated>1459539141465</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="59" y="24" width="1307" height="744" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980174" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+</project>
