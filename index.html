@@ -34,6 +34,7 @@
 				</section>
 				<section data-route="report">
 					<h1>Rapportage</h1>
+					<user-stats></user-stats>
 				</section>
 				<section data-route="lesson">
 					<h1>Lesactiviteit</h1>
@@ -54,6 +55,7 @@
 						<paper-input id="password" type="password" error-message="Het wachtwoord is incorrect." label="Password" auto-validate required></paper-input>
 						<paper-button id="login">Inloggen</paper-button>
 					</form>
+					<iron-ajax id="ajax" method="POST" url="/login" handle-as="json" on-response="handleLogin"></iron-ajax>
 				</section>
 			</iron-pages>
 		</main>

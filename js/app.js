@@ -41,7 +41,7 @@
              */
             var tmpUserInfo = {
                 id: 6,
-                first: 'Student',
+                first: 'Docent',
                 last: 'Example',
                 email: 'student.example@student.hu.nl',
                 role: 2

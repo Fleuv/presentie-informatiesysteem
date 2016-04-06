@@ -14,8 +14,10 @@
             </div>
         </template>
 
+        <iron-ajax id="ajax" method="POST" url="/lesson" handle-as="json" on-response="handleLesson"></iron-ajax>
+
     </template>
 
-    <script type="text/javascript" src="../js/user-list.js"
+    <script type="text/javascript" src="../js/user-list.js"></script>
 
 </dom-module>

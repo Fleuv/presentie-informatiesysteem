@@ -1,0 +1,28 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="user-stats">
+
+    <template>
+        <div class="item heading">
+            <p>
+                Naam en klas
+            </p>
+            <span>Absentie</span>
+        </div>
+        <template is="dom-repeat" id="userList" items="{{stats}}">
+            <div class="item">
+                <p>
+                    <strong>{{item.name}}</strong>
+                    <em>{{item.class}}</em>
+                </p>
+                <span>{{item.absent}}%</span>
+            </div>
+        </template>
+
+        <iron-ajax id="ajax" method="POST" url="/report" handle-as="json" on-response="handleStats"></iron-ajax>
+
+    </template>
+
+    <script type="text/javascript" src="../js/user-stats.js"></script>
+
+</dom-module>

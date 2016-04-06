@@ -246,6 +246,34 @@ main .option {
   -webkit-border-radius: 6px;
   border-radius: 6px;
 }
+:root agenda-list h5 {
+  line-height: 100%;
+  text-align: center;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+:root agenda-list h5 span {
+  line-height: 100%;
+}
+:root agenda-list h5 iron-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+:root agenda-list h5 iron-icon:first-of-type {
+  float: left;
+}
+:root agenda-list h5 iron-icon:last-of-type {
+  float: right;
+}
+:root agenda-list h5 iron-icon:hover {
+  background-color: #bfbfbf;
+}
 :root agenda-list .item {
   margin-bottom: 4px;
   line-height: 160%;
@@ -333,10 +361,60 @@ main .option {
   vertical-align: middle;
   display: inline-block;
 }
+:root user-list .item paper-button.present iron-icon.true {
+  display: inline-block;
+}
+:root user-list .item paper-button.present iron-icon.false {
+  display: none;
+}
 :root user-list .item paper-button iron-icon {
   width: 32px;
   height: 32px;
 }
 :root user-list .item paper-button iron-icon.true {
   display: none;
+}
+:root user-stats .item {
+  margin-bottom: 4px;
+  line-height: 160%;
+  padding: 16px 24px;
+  background-color: #AAAAAA;
+  -moz-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+}
+:root user-stats .item:hover {
+  background-color: #bfbfbf;
+}
+:root user-stats .item p {
+  width: 100%;
+  margin-bottom: 0;
+  vertical-align: middle;
+  display: inline-block;
+}
+:root user-stats .item strong {
+  width: 100%;
+  font-size: 24px;
+  vertical-align: middle;
+  display: inline-block;
+}
+:root user-stats .item span {
+  color: #3A539B;
+  width: 58px;
+  font-size: 32px;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-left: -58px;
+  display: inline-block;
+}
+:root user-stats .item.heading {
+  font-weight: bold;
+}
+:root user-stats .item.heading, :root user-stats .item.heading:hover {
+  background-color: rgba(44, 62, 80, 0.6);
+}
+:root user-stats .item.heading span {
+  color: #363636;
+  font-size: 16px;
 }

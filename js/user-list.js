@@ -2,15 +2,19 @@ Polymer({
     is: 'user-list',
     ready: function() {
         this.users = [
-            {id: 123, name: 'John Doe', absent: false},
-            {id: 321, name: 'Sally Johnson', absent: true}
+            {id: 1, name: 'John Doe', absent: false},
+            {id: 2, name: 'Sally Johnson', absent: true},
+            {id: 3, name: 'Willem Alexander', absent: false},
+            {id: 4, name: 'Freek Willem', absent: false}
         ];
     },
     present: function (e) {
-        if (this.className.indexOf('present')) {
-            this.className = this.className.replace(new RegExp('\bpresent\\b', ''))
+        var button = e.target.parentElement;
+
+        if (button.classList.contains('present')) {
+            button.classList.remove('present');
         } else {
-            this.className += ' present'
+            button.classList.add('present');
         }
     }
 });

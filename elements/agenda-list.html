@@ -3,25 +3,31 @@
 <dom-module id="agenda-list">
 
     <template>
-
-        <template is="dom-repeat" id="agendaList" items="{{schedule}}">
+        <h5>
+            <iron-icon icon="chevron-left" hidden="{{isStudent}}" on-tap="decreaseDay"></iron-icon>
+            <span>{{theDay}}</span>
+            <iron-icon icon="chevron-right" hidden="{{isStudent}}" on-tap="increaseDay"></iron-icon>
+        </h5>
+        <template is="dom-repeat" id="agendaList" items="{{lessons}}" as="lesson" filter="{{computeLessons(day)}}">
             <div class="item">
                 <div class="subject">
-                    <strong>{{item.subject}}</strong>
+                    <strong>{{lesson.subject}}</strong>
                 </div>
                 <div class="information">
-                    <em><iron-icon icon="watch-later"></iron-icon> {{item.date}}</em>
-                    <span><iron-icon icon="social:person"></iron-icon> {{item.teacher}}</span>
-                    <span><iron-icon icon="social:group"></iron-icon> {{item.class}}</span>
+                    <em><iron-icon icon="watch-later"></iron-icon> {{lesson.time}}</em>
+                    <span><iron-icon icon="social:person"></iron-icon> {{lesson.teacher}}</span>
+                    <span><iron-icon icon="social:group"></iron-icon> {{lesson.class}}</span>
                 </div>
                 <div class="interaction">
-                    <a href="lesson/{{item.id}}">
+                    <a href="lesson/{{lesson.id}}">
                         <iron-icon icon="block" hidden="{{notStudent}}"></iron-icon>
                         <iron-icon icon="arrow-forward" hidden="{{isStudent}}"></iron-icon>
                     </a>
                 </div>
             </div>
         </template>
+
+        <iron-ajax id="ajax" method="POST" url="/home" handle-as="json" on-response="handleAgenda"></iron-ajax>
 
     </template>
 
