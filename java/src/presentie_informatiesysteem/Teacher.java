@@ -3,10 +3,10 @@ package presentie_informatiesysteem;
 import java.util.ArrayList;
 
 public class Teacher extends User {
-	private ArrayList<Class> myClasses = new ArrayList<Class>();
+	private ArrayList<Group> myGroups = new ArrayList<Group>();
 	private ArrayList<Course> myCourses = new ArrayList<Course>();
 	
-	public Teacher(String first, String last, String email, String pass, String ID) {
+	public Teacher(String first, String last, String email, String pass, int ID) {
 		super(first, last, email, pass, ID);
 		// TODO Auto-generated constructor stub
 	}
@@ -15,15 +15,15 @@ public class Teacher extends User {
 		
 	}
 	
-	public void addClass(Class clas){
-		if (!this.myClasses.contains(clas)){
-			myClasses.add(clas);
+	public void addGroup(Group group){
+		if (!this.myGroups.contains(group)){
+			myGroups.add(group);
 		}
 	}
 	
-	public void removeClass(Class clas){
-		if (this.myClasses.contains(clas)){
-			myClasses.remove(clas);
+	public void removeGroup(Group group){
+		if (this.myGroups.contains(group)){
+			myGroups.remove(group);
 		}
 	}
 	
@@ -39,8 +39,22 @@ public class Teacher extends User {
 		}
 	}
 	
+	public ArrayList<Course> getCourses(){
+		return this.myCourses;
+	}
+	
 //	public void contactSLBer(SLBer slb, Student student, String problem){
 //		String email = slb.getEmail();
+//				
 //	}
+	
+	public String toString(){
+		String s = "";
+		
+		s += super.toString();
+		s += "Cursussen: " + myCourses + "\nKlassen: " + myGroups;
+		
+		return s;
+	}
 
 }
