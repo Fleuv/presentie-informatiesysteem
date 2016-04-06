@@ -1,0 +1,21 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="user-list">
+
+    <template>
+
+        <template is="dom-repeat" id="userList" items="{{users}}">
+            <div class="item">
+                <strong>{{item.name}}</strong>
+                <paper-button disabled="{{item.absent}}" on-click="present">
+                    <iron-icon icon="check" class="true"></iron-icon>
+                    <iron-icon icon="clear" class="false"></iron-icon>
+                </paper-button>
+            </div>
+        </template>
+
+    </template>
+
+    <script type="text/javascript" src="../js/user-list.js"
+
+</dom-module>

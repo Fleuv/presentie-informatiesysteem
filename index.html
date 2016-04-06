@@ -23,22 +23,32 @@
 				<a data-route="agenda" href="{{baseUrl}}" hidden="{{isGuest}}">Agenda</a>
 				<a data-route="report" href="{{baseUrl}}report" hidden="{{isGuest}}">Rapportage</a>
 				<a data-route="logout" href="{{baseUrl}}logout" hidden="{{isGuest}}">Uitloggen</a>
-				<p hidden="{{isStudent}}">Graag eerst even inloggen</p>
+				<p hidden="{{isLoggedIn}}">Graag eerst even inloggen</p>
 			</paper-menu>
 		</nav>
 		<main class="wrapper secondary">
 			<iron-pages attr-for-selected="data-route" selected="{{route}}">
 				<section data-route="home">
-					<h3>Agenda</h3>
-					<paper-listbox>
-						{{items}}
-					</paper-listbox>
+					<h1>Agenda</h1>
+					<agenda-list></agenda-list>
 				</section>
 				<section data-route="report">
-					<h3>Rapportage</h3>
+					<h1>Rapportage</h1>
+				</section>
+				<section data-route="lesson">
+					<h1>Lesactiviteit</h1>
+					<template is="dom-if" if="{{isStudent}}">
+						<h5>Weet je zeker dat je je af wilt melden voor deze les?</h5>
+						<a class="option" href=""><iron-icon icon="check"></iron-icon> Ja, meldt mij afwezig.</a>
+						<a class="option" href=""><iron-icon icon="clear"></iron-icon> Nee!</a>
+					</template>
+					<template is="dom-if" if="{{notStudent}}">
+						<h5>Geef aan welke studenten aanwezig zijn.</h5>
+						<user-list></user-list>
+					</template>
 				</section>
 				<section data-route="login">
-					<h3>Inloggen</h3>
+					<h1>Inloggen</h1>
 					<form>
 						<paper-input id="email" type="email" error-message="Voer een correct e-mailadres in." label="E-mail" auto-validate required></paper-input>
 						<paper-input id="password" type="password" error-message="Het wachtwoord is incorrect." label="Password" auto-validate required></paper-input>

@@ -14,8 +14,8 @@ html, body {
   width: 100%;
   height: 100%;
   color: $text;
+  font: normal normal 0/0 Arial, sans-serif;
   position: relative;
-  font: normal normal 0/0 Arial, Helvetica, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, b, strong, em, i {
@@ -90,10 +90,10 @@ nav {
   bottom: 0;
   left: $biggest;
   height: 100%;
-  padding: $normal $biggest $biggest;
+  padding: $smallest $biggest;
   max-width: $biggest*6;
   background-color: $primary-fill;
-  position: absolute;
+  position: fixed;
 
   a {
     color: $text;
@@ -120,14 +120,14 @@ nav {
 }
 main {
   z-index: 0;
-  top: 50%;
-  right: 0;
-  left: 0;
   width: 100%;
-  position: absolute;
   padding: $biggest;
+  margin: $biggest 0;
   background-color: $secondary-fill;
-  @include translateY(-50%);
+  .option {
+    display: block;
+    line-height: $line-height*2;
+  }
 }
 
 // Predefined element styling
@@ -170,6 +170,91 @@ main {
         cursor: pointer;
         display: inline-block;
         @include border-radius($normal-radius);
+      }
+    }
+  }
+  agenda-list {
+    .item {
+      margin-bottom: $smallest/4;
+      line-height: $line-height;
+      padding: $smallest $small;
+      background-color: $secondary-deco;
+      @include transition(background 0.4s);
+      &:hover {
+        background-color: darken($secondary-fill, 5);
+      }
+      strong {
+        font-size: $small;
+      }
+      span, em {
+        display: block;
+        font-size: $smallest;
+      }
+      .subject {
+        width: 20%;
+        text-align: center;
+        vertical-align: middle;
+        display: inline-block;
+        padding: $small $smallest;
+        background-color: $secondary-fill;
+        @include border-radius($small-radius);
+      }
+      .information {
+        width: 60%;
+        padding: 0 $small;
+        vertical-align: middle;
+        display: inline-block;
+      }
+      .interaction {
+        width: 20%;
+        text-align: right;
+        vertical-align: middle;
+        display: inline-block;
+        iron-icon {
+          cursor: pointer;
+          width: $big;
+          height: $big;
+          padding: $small/4;
+          background-color: $secondary-fill;
+          margin-left: $smallest/2;
+          @include border-radius(100%);
+          @include transition(background 0.4s);
+          &:hover {
+            background-color: lighten($secondary-fill, 5);
+          }
+        }
+      }
+    }
+  }
+  user-list {
+    .item {
+      margin-bottom: $smallest/4;
+      line-height: $line-height;
+      padding: $smallest $small;
+      background-color: $secondary-deco;
+      @include transition(background 0.4s);
+      &:hover {
+        background-color: darken($secondary-fill, 5);
+      }
+      strong {
+        width: 100%;
+        font-size: $small;
+        vertical-align: middle;
+        display: inline-block;
+      }
+      paper-button {
+        width: $normal;
+        height: $normal;
+        margin-left: -($normal);
+        vertical-align: middle;
+        display: inline-block;
+        iron-icon {
+          width: $normal;
+          height: $normal;
+          &.true {
+            display: none;
+          }
+        }
       }
     }
   }

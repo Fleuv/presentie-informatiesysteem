@@ -67,8 +67,8 @@ html, body {
   width: 100%;
   height: 100%;
   color: #363636;
+  font: normal normal 0/0 Arial, sans-serif;
   position: relative;
-  font: normal normal 0/0 Arial, Helvetica, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, b, strong, em, i {
@@ -159,10 +159,10 @@ nav {
   bottom: 0;
   left: 58px;
   height: 100%;
-  padding: 32px 58px 58px;
+  padding: 16px 58px;
   max-width: 348px;
   background-color: #89C4F4;
-  position: absolute;
+  position: fixed;
 }
 nav a {
   color: #363636;
@@ -191,17 +191,14 @@ nav a:last-of-type {
 
 main {
   z-index: 0;
-  top: 50%;
-  right: 0;
-  left: 0;
   width: 100%;
-  position: absolute;
   padding: 58px;
+  margin: 58px 0;
   background-color: #CCCCCC;
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+}
+main .option {
+  display: block;
+  line-height: 320%;
 }
 
 :root form paper-button {
@@ -248,4 +245,98 @@ main {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
+}
+:root agenda-list .item {
+  margin-bottom: 4px;
+  line-height: 160%;
+  padding: 16px 24px;
+  background-color: #AAAAAA;
+  -moz-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+}
+:root agenda-list .item:hover {
+  background-color: #bfbfbf;
+}
+:root agenda-list .item strong {
+  font-size: 24px;
+}
+:root agenda-list .item span, :root agenda-list .item em {
+  display: block;
+  font-size: 16px;
+}
+:root agenda-list .item .subject {
+  width: 20%;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 24px 16px;
+  background-color: #CCCCCC;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+:root agenda-list .item .information {
+  width: 60%;
+  padding: 0 24px;
+  vertical-align: middle;
+  display: inline-block;
+}
+:root agenda-list .item .interaction {
+  width: 20%;
+  text-align: right;
+  vertical-align: middle;
+  display: inline-block;
+}
+:root agenda-list .item .interaction iron-icon {
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  padding: 6px;
+  background-color: #CCCCCC;
+  margin-left: 8px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  -moz-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+}
+:root agenda-list .item .interaction iron-icon:hover {
+  background-color: #d9d9d9;
+}
+:root user-list .item {
+  margin-bottom: 4px;
+  line-height: 160%;
+  padding: 16px 24px;
+  background-color: #AAAAAA;
+  -moz-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+}
+:root user-list .item:hover {
+  background-color: #bfbfbf;
+}
+:root user-list .item strong {
+  width: 100%;
+  font-size: 24px;
+  vertical-align: middle;
+  display: inline-block;
+}
+:root user-list .item paper-button {
+  width: 32px;
+  height: 32px;
+  margin-left: -32px;
+  vertical-align: middle;
+  display: inline-block;
+}
+:root user-list .item paper-button iron-icon {
+  width: 32px;
+  height: 32px;
+}
+:root user-list .item paper-button iron-icon.true {
+  display: none;
 }

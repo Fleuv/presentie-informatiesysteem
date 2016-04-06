@@ -1,0 +1,30 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="agenda-list">
+
+    <template>
+
+        <template is="dom-repeat" id="agendaList" items="{{schedule}}">
+            <div class="item">
+                <div class="subject">
+                    <strong>{{item.subject}}</strong>
+                </div>
+                <div class="information">
+                    <em><iron-icon icon="watch-later"></iron-icon> {{item.date}}</em>
+                    <span><iron-icon icon="social:person"></iron-icon> {{item.teacher}}</span>
+                    <span><iron-icon icon="social:group"></iron-icon> {{item.class}}</span>
+                </div>
+                <div class="interaction">
+                    <a href="lesson/{{item.id}}">
+                        <iron-icon icon="block" hidden="{{notStudent}}"></iron-icon>
+                        <iron-icon icon="arrow-forward" hidden="{{isStudent}}"></iron-icon>
+                    </a>
+                </div>
+            </div>
+        </template>
+
+    </template>
+
+    <script type="text/javascript" src="../js/agenda-list.js"></script>
+
+</dom-module>

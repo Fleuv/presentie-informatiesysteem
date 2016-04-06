@@ -21,7 +21,7 @@ window.addEventListener('WebComponentsReady', function() {
     });
 
     page('/login', function (data) {
-        if (app.isStudent) {
+        if (app.isLoggedIn) {
             page.redirect(app.baseUrl);
         } else {
             app.route = 'login';
@@ -45,7 +45,11 @@ window.addEventListener('WebComponentsReady', function() {
         }
     });
 
-    // 404
+    page('/lesson/:id', function(id) {
+        app.route = 'lesson';
+        app.item = id;
+    });
+
     page('*', function () {
         app.$.toast.text = 'Pagina niet gevonden: "' + window.location.hash.substr(3)+ '"';
         app.$.toast.show();
